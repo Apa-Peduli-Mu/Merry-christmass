@@ -70,11 +70,11 @@
        <p id="pesan10" class="gaya2">រីករាយថ្ងៃបុណ្យណូអែល </p>
 
        <!-- Tombol Lanjut -->
-       <p id="opsL">Klik untuk Lanjut</p>
+       <p id="opsL">ចុចដើម្បីបន្ត</p>
      </blockquote></div>
 
      <!-- Tombol Kirim Pesan -->
-     <div id="Tombol"><a id="By">&#128140; Lanjut</a></div>
+     <div id="Tombol"><a id="By">&#128140; បន្ត</a></div>
 
      <!-- Pesan Tambahan -->
      <p id="katatambahan" class="sembunyi">វាមិនបានកើតឡើងទេព្រោះមិនមានអំណោយ ហាហា😭</p>
@@ -94,14 +94,14 @@
   
   async function inipesan(){
     var { value: nama } = await swals.fire({
-           title: 'Masukin Nama Kamu', input: 'text',
+           title: 'បញ្ចូល​ឈ្មោះ​របស់​អ្នក', input: 'text',
        });
        if(nama && nama.length < 11){
          window.nama = nama;
          vketikhalo="Hai, " + nama + " ✨";
          mulainama();
          } else {
-           await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
+           await swals.fire('Ups!', 'ឈ្មោះមិនអាចទទេ ឬលើសពី 10 តួអក្សរទេ យល់ព្រម!');inipesan();
     }
   }
 
@@ -111,7 +111,7 @@
   var tompositif = 'Mau';
   var tomnegatif = 'Engga';
     
-    async function menuju(){pesanwhatsapp = "Ketik pesan untuk zeen";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=6289613868010&text=" + pesanwhatsapp;}
+    async function menuju(){pesaninstagram = "វាយសារសម្រាប់ zeen";await swals.fire('OK!', 'ផ្ញើចម្លើយទៅកាន់ Instagram របស់ខ្ញុំ OK!', 'success');window.location = "https://www.instagram.com/zeendin1/" + pesaninstagram;}
 </script>
 <script src="asset/js/script4.js"></script>
 <!-- Sampai Sini -->
